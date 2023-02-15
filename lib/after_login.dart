@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hallo/main_page.dart';
+import 'package:hallo/login.dart';
 import 'package:slider_button/slider_button.dart';
 
 class after_login extends StatelessWidget {
@@ -54,7 +54,7 @@ class after_login extends StatelessWidget {
               margin: EdgeInsets.only(bottom: 50),
               child: SliderButton(action: (){
                 Navigator.of(context).push(MaterialPageRoute(builder:(context){
-                  return menu();
+                  return login();
                 }
                 ));
               },
@@ -72,7 +72,7 @@ class after_login extends StatelessWidget {
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
